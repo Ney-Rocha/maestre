@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RECUPERA - Sua ferramenta de alta performance</title>
+    
+    <link rel="shortcut icon" href="img/landing/Favicon.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+    <link href="css/plugins/dropzone/dropzone.css" rel="stylesheet">
+  
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="fixed-navigation pace-done mini-navbar">
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation" style="position:fixed">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <!--menu de com foto-->
+                        <div class="dropdown profile-element"> 
+                            <span><img alt="image" class="m-l" src="img/Recupera_Col.png" style="width:65%"/></span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="clear"> <span class="block m-t-xl"> <strong class="font-bold">Ney_Rocha</strong>
+                            </span> <span class="text-muted text-xs block">Administrador <b class="caret"></b></span> </span> </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li class="m-l-md m-t-sm"><span>IP:&nbsp;</span>123.123.123.11</li>
+                                <li><a href="#">Conta</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">Sair</a></li>
+                            </ul>
+                        </div>
+                            
+                        <div class="logo-element">
+                            <img src="img/Logo_Recupera.png" alt="Logo Recupera" style="width:80%"/>
+                        </div>
+                    </li>
+
+                    <!--Menu de navegação-->
+                    <li>
+                        <a href="consulta.html"><i class="fa fa-search fa-lg"></i> <span class="nav-label">Localizador</span></a>
+                    </li>
+                    
+                    <li>
+                        <a href="Enriquecimento.html"><i class="fa fa-diamond fa-lg"></i> <span class="nav-label">Enriquecimento</span></a>
+                    </li>
+                    <li>
+                        <a href="layout.html"><i class="fa fa-truck fa-lg"></i> <span class="nav-label">Layout</span></a>
+                    </li>
+
+                    <li><a href="#"><i class="fa fa-puzzle-piece"></i><span class="nav-label">Lista Segmentada</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li> <a href="Contagem_PF.html"><i class="fa fa-pie-chart"></i>Contagem PF</a></li>
+                            <li> <a href="Contagem_PJ.html"><i class="fa fa-area-chart"></i>Contagem PJ</a></li>
+                            <li><a href="extracao.html"><i class="fa fa-fire"></i>Extração</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="faleConosco.html"><i class="fa fa-bullhorn fa-lg"></i> <span class="nav-label">Fale conosco</span></a>
+                    </li>
+                   
+                </ul><!--  ul -->
+            </div> <!-- side bar collapse -->
+        </nav> <!-- nav -->
+        
+        <div id="page-wrapper" class="gray-bg sidebar-content">
+            <div class="row border-bottom">
+               <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0;">
+                   <div class="col-sm-6 col-xs-3">
+                       <div class="navbar-header">
+                           <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+                               <i class="fa fa-bars"></i>
+                           </a>
+                       </div>
+                   </div>
+                   <div class="col-sm-6 col-xs-9">
+                       <ul class="nav navbar-top-links navbar-right">
+                          <!-- navegação de sistema/ fale conosco -->
+                          <li>
+                              <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#"> 
+                                  <i class="fa fa-rocket fa-lg"></i> 
+                              </a>
+                              <ul class="dropdown-menu dropdown-messages">
+                                  <!-- Link Control -->
+                                  <li>
+                                      <div class="dropdown-messages-box">
+                                          <div class="media-body">
+                                              <a href="#" class="pull-left">
+                                                  <img alt="logo recupera" class="img-preview-sm" src="img/logo-diretrix.gif">
+                                              </a> <!-- Incluir o endereço de direcionamento -->
+                                              <h3 class="text-primary">Control</h3> 
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="divider"></li>
+                                  <!-- link compose -->
+                                  <li>
+                                      <div class="dropdown-messages-box">
+                                          <div class="media-body" >
+                                              <a href="#" class="pull-left">
+                                                  <img alt="logo recupera" class="img-preview-sm" src="img/Compose_logo.png">
+                                              </a><!-- Incluir o endereço de direcionamento -->
+                                              <h3 class="text-primary">Compose</h3> 
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="divider"></li>
+                                  <!-- LInk fale consoco -->
+                                  <li>
+                                      <div class="text-center link-block">
+                                          <a href="faleConosco.html">
+                                              <i class="fa fa-bullhorn fa-lg"></i> <strong>Fale conosco</strong>
+                                          </a>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </li><!-- Fim menu navegavel -->
+                          <li>
+                              <a href="login.html" class="m-r-lg">
+                                  <i class="fa fa-sign-out fa-lg"></i> Sair
+                              </a>
+                          </li>
+                      </ul>
+                   </div> <!-- col 6 9  -->
+               </nav><!--  nav -->
+            </div> <!-- topo Row -->
+
+            <div class="col-lg-12 m-t-lg">
+                <div class="row">
+                    <div class=" ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Incluir procedimento</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div><!-- ibox tool -->
+                        </div> <!-- ibox title -->
+                        <div class="ibox-content">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <form method="get" class="form-horizontal">
+                                        <div class="panel-body">
+                                           
+                                            <div class="form-group col-sm-12">
+                                                <label for="selectCliente" class="font-noraml">Cliente</label>
+                                                <select class="form-control" id="selectCliente">
+                                                    <option value="1">Selecione um cliente</option>
+                                                    <option value="2">Santander</option>
+                                                    <option value="3">Bradesco</option>
+                                                    <option value="4">Itaú</option>
+                                                    <option value="5">Farmácias</option>
+                                                </select>
+                                            </div> <!-- col 12 -->
+                                       
+
+                                            <div class="form-group col-sm-12">
+                                                <label for="layoutEntrada" class="font-noraml">Layout de entrada</label>
+                                                <div class="input-group"> 
+                                                    <select id="layoutEntrada" class="form-control" tabindex="1">
+                                                        <option value="1">Selecione o padrão de layout desejado</option>
+                                                        <option value="2">Layout_Padrão_Diretrix_csv</option>
+                                                        <option value="3">Layout_Padrão_Diretrix_xls</option>
+                                                        <option value="4">Layout_Padrão_Diretrix_xlsx</option>     
+                                                    </select>
+                                                    <span class="input-group-btn">
+                                                        <button type="button" data-toggle="modal" data-target="#verLayout" class="btn btn-outline btn-info"><i class=" fa fa-eye"></i></button>
+                                                    </span>
+                                                </div> <!-- input group -->
+                                            </div><!-- col12 -->
+
+                                            <div class="form-group col-sm-12">
+                                                <label for="procedimento" class="font-noraml">Procedimento</label>
+                                                <div class="input-group"> 
+                                                    <select id="procedimento" class="form-control"  tabindex="2">
+                                                        <option value="1">Selecione o Procedimento</option>
+                                                        <option value="2">Enriquecimento PF</option>
+                                                        <option value="3">Enriquecimento PJ</option>
+                                                        <option value="4">Enriquecimento Misto</option>     
+                                                    </select>
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-outline btn-info" data-toggle="modal" data-target="#verProcedimento"><i class=" fa fa-eye"></i></button>
+                                                    </span>
+                                                </div> <!-- input group -->
+                                            </div> <!-- col12 -->
+
+                                            <div class="form-group col-sm-12">
+                                                <label for="layoutExtracao" class="font-noraml">Layout de Retorno</label>
+                                                <div class="input-group"> 
+                                                    <select id="layoutExtracao" class="form-control" tabindex="3">
+                                                        <option value="1">Selecione o padrão de layout desejado</option>
+                                                        <option value="2">Layout_Padrão_Diretrix_csv</option>
+                                                        <option value="3">Layout_Padrão_Diretrix_xls</option>
+                                                        <option value="4">Layout_Padrão_Diretrix_xlsx</option>     
+                                                    </select>
+                                                    <span class="input-group-btn">
+                                                        <button type="button" data-toggle="modal" data-target="#verLayout" class="btn btn-outline btn-info"><i class=" fa fa-eye"></i></button>
+                                                    </span>
+                                                </div> <!-- inputgroup -->
+                                            </div> <!-- col12 -->
+
+                                        </div> <!-- Body paneL -->
+                                    </form> 
+                                </div> <!-- col 6 -->
+
+                                <div class="col-md-6">
+                                    <form id="my-awesome-dropzone" class="dropzone m-t-lg" action="#">
+                                        <div class="dropzone-previews"></div>
+                                    </form>
+                                    <div class="btn-group m-t"> 
+                                        <button type="reset" class="btn btn-outline btn-warning btn-sm outside-form" data-formid="my-awesome-dropzone">Cancelar</button>
+                                        <button type="submit" class="btn btn-outline btn-success btn-sm" data-formid="my-awesome-dropzone">Processar</button>
+                                    </div> <!-- btn group -->
+
+                                </div> <!-- col 6 -->
+                            </div><!--  row -->      
+                        </div> <!-- ibox-content -->
+                    </div> <!-- ibox-float -->
+                </div> <!-- row -->
+            </div> <!--   col-12 -->  
+            
+            <div class="ibox-content">
+              <div class="m-t-lg">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th class="text-center">Nome do arquivo</th>
+                                <th class="text-center">ID</th>
+                                <th class="text-center">Cliente</th>
+                                <th class="text-center">Usuário</th>
+                                <th class="text-center">Data envio</th>
+                                <th class="text-center">Qtd entrada</th>
+                                <th class="text-center">Qtd retorno</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">%</th>
+                                <th class="text-center">Detalhes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-warning btn-xs"
+                                            data-toggle="tooltip" title="Em fila"><i class=" fa fa-clock-o"></i>
+                                    </button>
+                                </td>
+                                <td>ENRIQUECER_NC_TELEFONE_NOK.txt</td> 
+                                <td>001</td>
+                                <td>Autocompleta</td>
+                                <td>Autocompleta</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>1134582</td>
+                                <td>1134582</td>
+                                <td>Em fila</td>
+                                <td class="text-center"><span class="pie">0/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-warning btn-xs"
+                                        data-toggle="modal" data-target="#detalhesArquivoFila" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-success btn-xs"
+                                            data-toggle="tooltip" title="Processando"><i class=" fa fa-spinner"></i>
+                                    </button>
+                                </td>
+                                <td>Bradesco_Enriquece_621_201.txt</td> 
+                                <td>136</td>
+                                <td>MeuDBM</td>
+                                <td>MeuDBM</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>458</td>
+                                <td>Processando</td>
+                                <td class="text-center"><span class="pie">37/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-success btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Download"><i class=" fa fa-download"></i>
+                                    </button>
+                                </td>
+                                <td>ENRIQUECER_NET_Diretrix_Cliente_.txt</td> 
+                                <td>002</td>
+                                <td>Diretrix</td>
+                                <td>Diretrix</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#detalhesArquivo" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="warning">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-warning btn-xs"
+                                            data-toggle="tooltip" title="Cancelado"><i class=" fa fa-exclamation-triangle"></i>
+                                    </button>
+                                </td>
+                                <td>DirFORAS_22_03_OUT.txt</td> 
+                                <td>123</td>
+                                <td>Webservices</td>
+                                <td>Webservices</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Cancelado</td>
+                                <td class="text-center"><span class="pie">0/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-warning btn-xs"
+                                        data-toggle="modal" data-target="#detalhesArquivoErro" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="danger">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-danger btn-xs"
+                                            data-toggle="tooltip" title="Erro"><i class=" fa fa-times"></i>
+                                    </button>
+                                </td>
+                                <td>A1SOLUCOES_2203.txt</td> 
+                                <td>015</td>
+                                <td>Diretrix</td>
+                                <td>Admin</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Erro</td>
+                                <td class="text-center"><span class="pie">37/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-danger btn-xs"
+                                        data-toggle="modal" data-target="#detalhesArquivoErro" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Download"><i class=" fa fa-download"></i>
+                                    </button>
+                                </td>
+                                <td>EXTRACAO_FGTS_A_15122015.txt</td> 
+                                <td>136</td>
+                                <td>Recupera</td>
+                                <td>Recupera</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>71245</td>
+                                <td>71245</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Download"><i class=" fa fa-download"></i>
+                                    </button>
+                                </td>
+                                <td>Cliente_REQUERENTES2017</td> 
+                                <td>745</td>
+                                <td>MeuDBM</td>
+                                <td>MeuDBM</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>19501</td>
+                                <td>19501</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Download"><i class=" fa fa-download"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_BASE1NV_200320</td> 
+                                <td>133</td>
+                                <td>Recupera</td>
+                                <td>Recupera</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>33458</td>
+                                <td>33458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015,txt</td> 
+                                <td>111</td>
+                                <td>MeuDBM</td>
+                                <td>MeuDBM</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>213458</td>
+                                <td>213458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>REQUERENTES2017_enriquece_15122015.txt</td> 
+                                <td>005</td>
+                                <td>Diretrix</td>
+                                <td>ADMIN</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>458</td>
+                                <td>458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_Teste3_15122015.txt</td> 
+                                <td>002</td>
+                                <td>MeuDbm</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_teste_15122015.txt</td> 
+                                <td>003</td>
+                                <td>Diretrixon</td>
+                                <td>Diretrixon</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_teste22_15122015</td> 
+                                <td>014</td>
+                                <td>Recupera</td>
+                                <td>Recupera</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>006</td>
+                                <td>Cluster</td>
+                                <td>Cluster</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>136</td>
+                                <td>XMEN</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>136</td>
+                                <td>XMEN</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>136</td>
+                                <td>XMEN</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>136</td>
+                                <td>XMEN</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>136</td>
+                                <td>XMEN</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>136</td>
+                                <td>XMEN</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>136</td>
+                                <td>XMEN</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>136</td>
+                                <td>XMEN</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>136</td>
+                                <td>XMEN</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>136</td>
+                                <td>XMEN</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>136</td>
+                                <td>XMEN</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>136</td>
+                                <td>XMEN</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>136</td>
+                                <td>XMEN</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                        data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <td class="text-center">
+                                   <button Type="button" class="btn btn-outline btn-info btn-xs"
+                                            data-toggle="tooltip" title="Baixado"><i class=" fa fa-check"></i>
+                                    </button>
+                                </td>
+                                <td>Diretrix_Cliente_kdsgf_15122015</td> 
+                                <td>136</td>
+                                <td>XMEN</td>
+                                <td>Wolwerine</td>
+                                <td>08/11/2016 13:10:04</td>
+                                <td>13458</td>
+                                <td>13458</td>
+                                <td>Processado</td>
+                                <td class="text-center"><span class="pie">100/100</span></td>
+                                <td class="text-center">
+                                    <button Type="button" class="btn btn-outline btn-info btn-xs" data-toggle="modal" data-target="#myModal2" data-toggle="tooltip" title="Ver datalhes"><i class=" fa fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th></th>
+                                <th class="text-center">Nome do arquivo</th>
+                                <th class="text-center">ID</th>
+                                <th class="text-center">Cliente</th>
+                                <th class="text-center">Usuário</th>
+                                <th class="text-center">Data envio</th>
+                                <th class="text-center">Qtd entrada</th>
+                                <th class="text-center">Qtd entrada</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">%</th>
+                                <th class="text-center">Detalhes</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div> <!-- table responsive -->
+              </div> <!-- envelope -->
+            </div> <!-- ibox-content -->
+            
+            <div class="footer">
+                <div class="pull-right">
+                    <strong>Recupera</strong>
+                </div>
+                <div>
+                    <strong>Copyright</strong> Diretrix.On &copy; 2017
+                </div>
+            </div> <!-- footer -->
+        </div><!--  page-wrapper -->
+    </div>   <!-- wrapper --> 
+
+    <!--ver detalhes do arquivo em fila-->
+    <div class="modal inmodal" id="detalhesArquivoFila" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content animated slideInRight">
+                <div class="modal-header">
+                    <button type="button" class="close primary" data-dismiss="modal"><span aria-hidden="true"><i class="fa fa-times"></i></span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title"><i class="fa fa-clock-o"></i>&nbsp;Em fila</a></h4>
+                </div> <!-- modal header -->
+                
+                <div class="col-md-4">
+                    <div class="widget style1 navy-bg">
+                        <div class="row vertical-align">
+                            <div class="col-xs-3">
+                                ID
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <h3 class="font-bold">1223</h3>
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- wiget -->
+                </div> <!-- col4 -->
+                <div class="col-md-4">
+                    <div class="widget style1 navy-bg">
+                        <div class="row vertical-align">
+                            <div class="col-xs-3">
+                                Usuário
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <h3 class="font-bold">Rocha</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- col 4 -->
+                <div class="col-md-4">
+                    <div class="widget style1 navy-bg">
+                        <div class="row vertical-align">
+                            <div class="col-xs-3">
+                                Cliente
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <h3 class="font-bold">Diretrix</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- col 4 -->
+
+                <div class="modal-body col-md-12">
+                    
+                    <ul class="list-group clear-list m-t" >
+                        <li class="list-group-item fist-item">
+                            <span class="pull-right">
+                              Layout_Padrão_entrada_diretrix
+                            </span>
+                            <span class="label label-info"><i class="fa fa-arrow-up"></i></span> <span class="font-bold">Layout de Entrada</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="pull-right"> 
+                                 28/11/2016 23:46:09
+                            </span>
+                            <span class="label label-info"><i class="fa fa-arrow-up"></i></span> <span class="font-bold">Data / Hora início</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="pull-right">
+                                Env_arquivo_teste_cliente_lista_enriquecer.txt
+                            </span>
+                            <span class="label label-info"><i class="fa fa-arrow-up"></i></span> <span class="font-bold">Nome do arquivo</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="pull-right">
+                                1682
+                            </span>
+                            <span class="label label-info"><i class="fa fa-arrow-up"></i></span> <span class="font-bold">Qtd de registros</span>
+                        </li>
+                         <li class="list-group-item">
+                            <span class="pull-right">
+                                Processado
+                            </span>
+                            <span class="label label-info"><i class="fa fa-arrow-up"></i></span> <span class="font-bold">Em fila</span>
+                        </li>
+                    </ul>
+                </div> <!-- modal body -->
+                
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-outline btn-danger" data-dismiss="#" data-toggle="tooltip" title="cancelar Processamento"><i class="fa fa-stop"></i>&nbsp;Cancelar processo</button>
+                    <button type="button" class="btn btn-outline btn-info"><i class="fa fa-download"></i>&nbsp;Baixar original</button>
+                </div> <!-- modal footer -->
+            </div> <!-- modal content -->
+        </div> <!-- modal dialog -->
+    </div> <!-- modal total inmodal-->
+
+    <!--ver detalhes do arquivo processado-->
+    <div class="modal inmodal" id="detalhesArquivo" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content animated slideInRight">
+                <div class="modal-header">
+                    <button type="button" class="close primary" data-dismiss="modal"><span aria-hidden="true"><i class="fa fa-times"></i></span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title"><i class="fa fa-diamond"></i>&nbsp;Processado</a></h4>
+
+                </div> <!-- modal header-->
+
+                <div class="col-md-4">
+                    <div class="widget style1 navy-bg">
+                        <div class="row vertical-align">
+                            <div class="col-xs-3">
+                                ID
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <h3 class="font-bold">1223</h3>
+                            </div>
+                        </div>
+                    </div> <!-- widget -->
+                </div> <!-- col 4 -->
+                <div class="col-md-4">
+                    <div class="widget style1 navy-bg">
+                        <div class="row vertical-align">
+                            <div class="col-xs-3">
+                                Usuário
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <h3 class="font-bold">Rocha</h3>
+                            </div>
+                        </div>
+                    </div> <!-- wigdget -->
+                </div> <!-- col 4 -->
+                <div class="col-md-4">
+                    <div class="widget style1 navy-bg">
+                        <div class="row vertical-align">
+                            <div class="col-xs-3">
+                                Cliente
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <h3 class="font-bold">Diretrix</h3>
+                            </div>
+                        </div>
+                    </div> <!-- widget -->
+                </div> <!-- col-4 -->
+            
+                <div class="modal-body col-sm-12">
+                    <div class="content">
+                        <ul class="list-group clear-list" >
+                            <li class="list-group-item fist-item">
+                                <span class="pull-right">
+                                  Layout_Padrão_entrada_diretrix
+                                </span>
+                                <span class="label label-info"><i class="fa fa-arrow-up"></i></span> <span class="font-bold">Layout de Entrada</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right">                                          28/11/2016 23:46:09
+                                </span>
+                                <span class="label label-info"><i class="fa fa-arrow-up"></i></span> <span class="font-bold">Data / Hora início</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right">
+                                    Env_arquivo_teste_cliente_lista_enriquecer.txt
+                                </span>
+                                <span class="label label-info"><i class="fa fa-arrow-up"></i></span> <span class="font-bold">Nome do arquivo</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right">
+                                    1682
+                                </span>
+                                <span class="label label-info"><i class="fa fa-arrow-up"></i></span> <span class="font-bold">Qtd de envio</span>
+                            </li>
+                             <li class="list-group-item">
+                                <span class="pull-right">
+                                    Processado
+                                </span>
+                                <span class="label label-info"><i class="fa fa-arrow-up"></i></span> <span class="font-bold">Status</span>
+                            </li>
+                        </ul>
+                    </div> <!-- content -->
+                
+                    <div class="content">
+                        <ul class="list-group clear-list">
+                            <li class="list-group-item fist-item">
+                                <span class="pull-right">
+                                  Layout_Padrão_retorno_diretrix
+                                </span>
+                                <span class="label label-primary"><i class="fa fa-arrow-down"></i></span> <span class="font-bold">Layout de retorno</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right">
+                                    29/11/2016 00:05:09
+                                </span>
+                                <span class="label label-primary"><i class="fa fa-arrow-down"></i></span> <span class="font-bold">Data / Hora Fim</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right">
+                                    Env_arquivo_teste_cliente_listaenriquecer_finalizado.zip
+                                </span>
+                                <span class="label label-primary"><i class="fa fa-arrow-down"></i></span> <span class="font-bold">Nome do arquivo</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right">
+                                    1682
+                                </span>
+                                <span class="label label-primary"><i class="fa fa-arrow-down"></i></span> <span class="font-bold">Qtd de retorno</span>
+                            </li>
+                        </ul>
+                    </div> <!-- content -->
+                </div><!--  modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline btn-primary m-t"><i class="fa fa-download"></i>&nbsp;Download</button>
+                </div> <!-- modal footer -->
+            </div><!--  modal content -->
+        </div><!--  modal dialog -->
+    </div> <!-- modal total inmodal -->
+
+    <!--ver detalhes do arquivo erro/ cancelado-->
+    <div class="modal inmodal" id="detalhesArquivoErro" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content animated slideInRight">
+                <div class="modal-header">
+                    <button type="button" class="close primary" data-dismiss="modal"><span aria-hidden="true"><i class="fa fa-times"></i></span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title"><i class="fa fa-exclamation-triangle"></i>&nbsp;Erro / Cancelado</a></h4>
+                </div> <!-- modal header -->
+                
+                <div class="col-md-4">
+                    <div class="widget style1 navy-bg">
+                        <div class="row vertical-align">
+                            <div class="col-xs-3">
+                                ID
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <h3 class="font-bold">1223</h3>
+                            </div>
+                        </div>
+                    </div> <!-- widget -->
+                </div> <!-- col4 -->
+                <div class="col-md-4">
+                    <div class="widget style1 navy-bg">
+                        <div class="row vertical-align">
+                            <div class="col-xs-3">
+                                Usuário
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <h3 class="font-bold">Rocha</h3>
+                            </div>
+                        </div>
+                    </div> <!-- widget -->
+                </div> <!-- col 4 -->
+                <div class="col-md-4">
+                    <div class="widget style1 navy-bg">
+                        <div class="row vertical-align">
+                            <div class="col-xs-3">
+                                Cliente
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <h3 class="font-bold">Diretrix</h3>
+                            </div>
+                        </div>
+                    </div> <!-- widget -->
+                </div> <!-- col-4 -->
+                
+                <div class="modal-body col-sm-12">
+                    <ul class="list-group clear-list m-t" >
+                        <li class="list-group-item fist-item">
+                            <span class="pull-right">
+                              Layout_Padrão_entrada_diretrix
+                            </span>
+                            <span class="label label-danger"><i class="fa fa-times"></i></span> <span class="font-bold">Layout de Entrada</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="pull-right">
+                            28/11/2016 23:46:09
+                            </span>
+                            <span class="label label-danger"><i class="fa fa-times"></i></span> <span class="font-bold">Data / Hora início</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="pull-right">
+                            Env_arquivo_teste_cliente_listaenriquecer.txt
+                            </span>
+                            <span class="label label-danger"><i class="fa fa-times"></i></span> <span class="font-bold">Nome do arquivo</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="pull-right">
+                            1682
+                            </span>
+                            <span class="label label-danger"><i class="fa fa-times"></i></span> <span class="font-bold">Qtd de registros</span>
+                        </li>
+                         <li class="list-group-item">
+                            <span class="pull-right">
+                                Erro
+                            </span>
+                            <span class="label label-danger"><i class="fa fa-times"></i></span> <span class="font-bold">Status</span>
+                        </li>
+                    </ul>
+                    <div class="content">
+                        <small class="font-bold" > Detalhes do erro</small>
+                        <div class="widget-text-box-2">
+                            <h4 class="media-heading">Erro de Processamento:</h4>
+                            </br>
+                            <p><strong>Descrição: </strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        </div>
+                    </div> <!-- content -->
+                </div><!-- modal-body -->
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline btn-warning" data-dismiss="modal"><i class="fa fa-repeat"></i>&nbsp;Reiniciar</button>
+                    <button type="button" class="btn btn-outline btn-info"><i class="fa fa-download"></i>&nbsp;Baixar original</button>
+                </div> <!-- modal footer -->
+            </div> <!-- modal content -->
+        </div> <!-- modal dialog -->
+    </div> <!-- modal total inmodal -->
+
+    <!--Ver layout-->
+    <div class="modal inmodal" id="verLayout" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content animated slideInDown">
+                <div class="modal-header">
+                    <button type="button" class="close primary" data-dismiss="modal"><span aria-hidden="true"><i class="fa fa-times"></i></span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title"><i class="fa fa-file-text-o"></i>&nbsp;Layout de entrada</a></h4>
+                </div> <!-- modal header -->
+                
+                <div class="modal-body col-md-12">
+                    <div class="content">
+                    
+                        <div class="form-group col-sm-12">
+                            <label class="col-sm-2 label-control">Nome do layout</label>
+                            <div class="col-sm-10"><input type="text" class="form-control" value="layout_Padrão_DXON_PF" readonly="readonly">
+                            </div>
+                        </div> <!-- form -group -->                        
+                        
+                        <div class="row">
+                           <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        Tipo de arquivo
+                                    </div>
+                                    <div class="panel-body">
+                                        <p>Arquivo de texto (.txt)</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        Delimitação
+                                    </div>
+                                    <div class="panel-body">
+                                        <p>Largura fixa</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                       Header
+                                    </div>
+                                    <div class="panel-body">
+                                        <p>Sim</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        Footer
+                                    </div>
+                                    <div class="panel-body">
+                                        <p>Não</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div> <!-- row -->
+
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th class="text-left">Campo</th>
+                                        <th class="text-right">Tipo</th>
+                                        <th class="text-right">Tamanho</th>
+                                        <th class="text-right">Inicio</th>
+                                        <th class="text-right">fim</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+
+                                    <tr class="">
+                                        <td class="strong text-left">CPF </td>
+                                        <td class="text-right">Número</td>
+                                        <td class="text-right">11</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">11</td>
+                                    </tr>
+                                </tbody>
+                            </table>                                   
+                        </div>
+                        <div class="content m-t">
+                            <h4 class="media-heading">Observações</h4>
+                            <div class="widget-text-box-2">
+                                <p><strong>Distinto: </strong>Layout com regra de devolução de telefones distintos</p>
+                            </div>
+                        </div> <!-- content -->
+                    </div>
+                </div>
+                
+                <div class="modal-footer m-t">
+                </div>
+            </div> <!-- modal content -->
+        </div> modal dialog
+    </div> <!-- modal total inmodal -->
+
+    <!--Ver procedimento-->
+    <div class="modal inmodal" id="verProcedimento" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content animated slideInDown">
+                <div class="modal-header">
+                    <button type="button" class="close primary" data-dismiss="modal"><span aria-hidden="true"><i class="fa fa-times"></i></span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title"><i class="fa fa-file-text-o"></i>&nbsp;Procedimento</a></h4>
+                </div><!--  modal header -->
+                
+                <div class="modal-body col-md-12">
+                    <div class="content">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label label-weight">Layout de entrada</label>
+                                <div class="col-sm-10"><input type="text" class="form-control" value="layout_Padrão_Envio_DXON_PF" readonly="readonly" style="font-weight: 600;"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label label-weight">Procedimento</label>
+                                <div class="col-sm-10"><input type="text" class="form-control" value="Enriquece_Telefone_Distintos" readonly="readonly" style="font-weight: 600;"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label label-weight">Layout de retorno</label>
+                                <div class="col-sm-10"><input type="text" class="form-control" value="layout_Padrão_retorno_XON_PF" readonly="readonly" style="font-weight: 600;"></div>
+                            </div>
+
+                        </div> <!-- form-horizontal -->
+                    </div> <!-- content -->
+
+                    <div class="content">
+                        <h4 class="media-heading">Observações</h4>
+                        <div class="widget-text-box-2">
+                            <p><strong>Distinto: </strong>Layout com regra de devolução de telefones distintos</p>
+                        </div>
+                    </div> <!-- content -->
+
+                </div> <!-- modal body -->
+
+                <div class="modal-footer m-t-lg" ></div>
+
+            </div> <!-- modal dialog -->
+        </div> <!-- modal dialog -->
+    </div><!-- modal total inmodal -->
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!--datatable-->
+    <script src="js/plugins/dataTables/datatables.min.js"></script>
+    <!-- Grafico pie - Table -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <!-- Peity pie data -->
+    <script src="js/demo/peity-demo.js"></script>
+    <!-- dropzone  -->
+    <script src="js/plugins/dropzone/dropzone.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+
+            Dropzone.options.myAwesomeDropzone = {
+
+                autoProcessQueue: false,
+                addRemoveLinks: true,
+                uploadMultiple: true,
+                parallelUploads: 100,
+                maxFiles: 10,
+
+                // Dropzone settings
+                init: function() {
+                    var myDropzone = this;
+
+                    this.element.querySelector("button[type=submit]").addEventListener("click", function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        myDropzone.processQueue();
+                    });
+                    this.on("sendingmultiple", function() {
+                    });
+                    this.on("successmultiple", function(files, response) {
+                    });
+                    this.on("errormultiple", function(files, response) {
+                    });
+
+                    self.on("removedfile", function (file) {
+                            console.log(file);
+                          });
+                }
+
+            }
+
+                       
+            $('.dataTables-example').DataTable({
+                dom: '<"html5buttons"B>lTfgitp',
+                buttons: [
+                    { extend: 'copy'},
+                    {extend: 'csv'},
+                    {extend: 'excel', title: 'ExampleFile'},
+                    {extend: 'print',
+                     customize: function (win){
+                            $(win.document.body).addClass('white-bg');
+                            $(win.document.body).css('font-size', '10px');
+
+                            $(win.document.body).find('table')
+                                    .addClass('compact')
+                                    .css('font-size', 'inherit');
+                    }
+                    }
+                ]
+
+            });
+        
+        });
+    </script>
+</body>
+</html>

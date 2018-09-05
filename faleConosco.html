@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ney Rocha">
+
+   <title>RECUPERA - Sua ferramenta de alta performance</title>
+    
+    <link rel="shortcut icon" href="img/landing/Favicon.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/animate.css" rel="stylesheet"/>
+</head>
+
+<body class="gray-bg"> <!-- background pagina -->
+    <!-- Conteudo total -->
+    <div class="container">
+        <h1 class="text-center">Fale conosco</h1>
+        <div class="form-group animated fadeInDown m-t">
+            <form action="#" method="get" class="form-horizontal">
+                <!-- Dados do formulário -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label for="dptoFc" class="col-md-3 control-label">Departamento</label>
+                        <div class="col-md-9">
+                            <select id="dptoFc" name="departamento" class="form-control" required>
+                                <option value="selecione" selected>Selecione o departamento</option>
+                                <option value="atendimento">Atendimento</option>
+                                <option value="comercial">Comercial</option>
+                                <option value="financeiro">Financeiro</option>
+                                <option value="tecnologia">Tecnologia (TI)</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nomeFC" class="col-md-3 control-label">Nome  </label>
+                        <div class="col-md-9">
+                            <input id="nomeFC" type="text" class="form-control" placeholder="Informe seu nome" required autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailFc" class="col-md-3 control-label">E-mail</label>
+                        <div class="col-md-9">
+                            <input id="emailFc" type="email" class="form-control" placeholder="Informe seu e-mail" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ciaFc" class="col-md-3 control-label">Empresa</label>
+                        <div class="col-md-9">
+                            <input id="ciaFc" type="tel" class="form-control" placeholder="Informe sua empresa" maxlength="15">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telFc" class="col-md-3 control-label">Telefone</label>
+                            <div class="col-md-9"><input id="telFc" type="text" class="form-control" placeholder="Informe seu telefone" data-mask="(99) 99999999?9" placeholder="">
+                        </div>
+                    </div>
+                </div><!-- fim dados do formulário -->
+                <!-- Conteudo msg + botões -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <!-- Msg -->
+                    <div class="input-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <textarea name="fale-conosco " id="faleConosco" cols="40" rows="12" class="form-control" placeholder="Digite sua mensagem aqui"></textarea>
+                    </div>
+                    <!-- Botões do formulario -->
+                    <div class="pull-right btn-group m-t m-r-md"> 
+                        <button class="btn btn-outline btn-danger" onClick="history.go(-1)">Voltar</button>
+                        <button class="btn btn-outline btn-warning" type="reset">Limpar</button>
+                        <button class="btn btn-primary " type="submit"> Salvar</button>
+                    </div> <!-- fim botões--> 
+                </div>
+            </form>
+        </div>
+        <!-- Dados de ctto da diretrix -->
+        <div class="row">
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center animated fadeInDown">
+                    <div class="middle-box loginscreen ">
+                        <img src="img/logo-diretrix.gif" style="width:30%">
+                    </div>
+                    <div class="m-t-xs">
+                        <p><strong><i class="fa fa-phone"></i> (11) 3064-5693</strong><br/><i class="fa fa-envelope"></i> atendimento@diretrixon.com.br <br/><i class="fa fa-map-marker"></i> Av. Brigadeiro Faria Lima, 2.391 - CJ.131 - 13º andar - CEP: 01452-905 - Jardim Paulistano - São Paulo - SP / Brasil</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- fim do dados de contto diretrix -->
+    </div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Input Mask-->
+    <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+</body>
+
+</html>
