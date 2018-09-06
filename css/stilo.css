@@ -259,6 +259,22 @@ video {
   padding: 10px 0 0px 10px;
 }
 
+.navbar-brand .nav-logo-temadm{
+  width:100%;
+  max-width: 100px;
+  float: left;
+  padding: 10px;
+
+}
+
+.navbar-brand .nav-logo-temadm>a{
+color: #fff;
+text-transform: uppercase;
+font-size: 12px;
+
+}
+
+
 .navbar-brand .nav-logo-diretrix img,
 .navbar-brand .nav-logo-recupera img{
   width: 100%;
@@ -335,12 +351,25 @@ video {
     padding-right: 10px;
     border-right: solid 1px #868686;
 
-
   }
+
   .navbar-brand .nav-logo-diretrix{
     width:38%;
     padding: 5px 0 0px 10px;
   }
+
+  .navbar-brand .nav-logo-temadm{
+    padding: 4px;
+
+  }
+
+  .navbar-brand .nav-logo-temadm>a{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+
+  }
+
   
 }
 
@@ -368,11 +397,11 @@ video {
     padding: 5px 0 0px 10px; */
     display: none;
   }
+
+  .navbar-brand .nav-logo-temadm{
+    display: none;
+  }
 }
-
-
-
-
 
 /* ======================================================================================
 ----------------------------------SAFE AREA----------------------------------------------
@@ -383,7 +412,7 @@ video {
 	min-height: 420px;
 	background-color: #DAB100;
 	position: relative;
-	top: 90px;
+	top: 72px;
 }
 
 .section-login{
@@ -988,7 +1017,7 @@ button.btn-formLogin:hover{
 
  .container-footer{
   width:  100%;
-  max-width: 250px;
+  max-width: 330px;
  }
 
  .container-brand{
@@ -1005,6 +1034,13 @@ button.btn-formLogin:hover{
   height: auto;
  }
 
+ @media(min-width: 1367px ){
+  .container-footer {
+      width: 100%;
+      max-width: 450px;
+  }
+ }
+
 
 @media(max-width: 1366px){
   footer h2 {
@@ -1017,6 +1053,7 @@ button.btn-formLogin:hover{
       font-size: 11px;
       margin: 5px 0;
   }
+  
 }
  
 
