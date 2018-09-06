@@ -82,11 +82,11 @@ h5 {
 ============================================================================================= */
 
 .text-lazur{
-  color: #008496;
+  color: #cb9200;
 }
 
 .text-blue{
-  color:  #003055!important;
+  color:  #0e593d!important;
 }
 
 /* COLORS */
@@ -218,7 +218,7 @@ video {
 ===================================================================================== */
  .navbar-login{
     width: 100%;
-    background-color: #002f54;
+    background-color: #0e593d;
     height: 90px;
     padding: 20px 0;
     z-index: 1001;
@@ -228,8 +228,8 @@ video {
  }
 
  .navbar-default {
-    background-color: #002f54;
-    border-color: #002f54;
+    background-color: #0e593d;
+    border-color: #0e593d;
 }
 .navbar-right {
     float: right!important;
@@ -279,12 +279,12 @@ video {
 
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
-    background-color: #002f54;
+    background-color: #0e593d;
 }
 
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
-    background-color: #002f54;
+    background-color: #0e593d;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -295,7 +295,7 @@ video {
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:active{
-    color: #008496;
+    color: #cb9200;
     background-color: transparent;
 }
 
@@ -381,7 +381,7 @@ video {
 .safe-area{
 	width: 100%;
 	min-height: 420px;
-	background-color: #00c4cd;
+	background-color: #DAB100;
 	position: relative;
 	top: 90px;
 }
@@ -400,7 +400,7 @@ video {
 }
 
 .safe-area h1 > span{
-    color: #002f54;
+    color: #0e593d;
 }
 
 
@@ -412,8 +412,8 @@ video {
 
 .safe-area h3{
   margin-top: 5px;
-  font-weight: 100;
-  color: #2c4e7f;
+  font-weight: 200;
+  color: #0e593d;
 }
 .img-container{
   position: relative;
@@ -451,8 +451,8 @@ textarea.form-login{
 
 
 .container-item-login{
-  background-color: #008496;
-  color: #fff;
+  background-color: #cb9200;
+  color: #000000;
   width: 100%;
   height: auto;
   padding: 15px 15px !important;
@@ -462,9 +462,10 @@ textarea.form-login{
 }
 
 .container-item-login > p.title-item{
-  font-size: 12px!important;
+  font-size: 13px!important;
   text-transform: uppercase;
-  font-weight: 700;
+  color: #0e593d;
+  font-weight: bold;
 }
 
 .container-item-login > p{
@@ -474,11 +475,11 @@ textarea.form-login{
 
 .container-item-login > p > a{
   font-size:13px;
-  color: #fff;
+  color: #000000;
 }
 
 button.btn-formLogin{
-  background-color: #002f54;
+  background-color: #0e593d;
   color: #fff;
 }
 
@@ -914,7 +915,7 @@ button.btn-formLogin:hover{
 
 
  button.btn-formTalk{   
-   background-color:#008496;
+   background-color:#cb9200;
    color: #fff;
  }
 
@@ -924,11 +925,11 @@ button.btn-formLogin:hover{
  }
 
  .font-lazur{
-   color: #008496;
+   color: #cb9200;
  }
 
  .font-blue{
-   color:  #003055!important;
+   color:  #0e593d!important;
  }
 
  @media(max-width: 425px){
@@ -987,13 +988,21 @@ button.btn-formLogin:hover{
 
  .container-footer{
   width:  100%;
-  max-width: 320px;
+  max-width: 250px;
+ }
+
+ .container-brand{
+  width: 100%;
+ }
+
+ .logo-footer{
+  width: 120px;
+  float: right
  }
 
 .logo-footer a img {
-  display: inline-block;
-  background-color: transparent;
-  float: right;
+  width: 100%;
+  height: auto;
  }
 
 
@@ -1028,10 +1037,23 @@ button.btn-formLogin:hover{
       text-align: center;
       display: inline-flex;
       flex-direction: column;
-    }   
+    }  
+
+    .logo-footer{
+      float: left;
+      padding-top: 34px;
+     } 
   }
 
   @media(max-width: 425px){
+
+    .logo-footer{
+      width: 120px;
+      float: left;
+      padding-top: 0px;
+     }
+
+
     .logo-footer a img {
     display: inline-block;
     background-color: transparent;
@@ -1054,11 +1076,11 @@ button.btn-formLogin:hover{
 ============================================================================================= */
 
 .text-lazur{
-  color: #008496;
+  color: #cb9200;
 }
 
 .text-blue{
-  color:  #003055!important;
+  color:  #0e593d!important;
 }
 
 /* COLORS */
@@ -1112,11 +1134,11 @@ button.btn-formLogin:hover{
   color: #ffffff;
 }
 .blue-bg {
-  background-color: #002f54;
+  background-color: #0e593d;
   color: #ffffff;
 }
 .lazur-bg {
-  background-color: #003055;
+  background-color: #0e593d;
   color: #ffffff;
 }
 .yellow-bg {
@@ -1506,8 +1528,8 @@ video {
   color: #fff;
 }
 .btn-primary {
-  background-color: #002f54;
-  border-color: #002f54;
+  background-color: #0e593d;
+  border-color: #0e593d;
   color: #FFFFFF;
 }
 .btn-primary:hover,
