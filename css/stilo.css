@@ -512,8 +512,9 @@ button.btn-formLogin{
   color: #fff;
 }
 
-button.btn-formLogin:hover{
-  background-color: #1a4465;
+button.btn-formLogin:hover,
+button.btn-formLogin:active{
+  background-color: #023e30;
   color: #fff;
 }
 
@@ -948,8 +949,10 @@ button.btn-formLogin:hover{
    color: #fff;
  }
 
- button.btn-formTalk:hover{
-   background-color:#00b3be;
+ button.btn-formTalk:hover,
+ button.btn-formTalk:active,
+  button.btn-formTalk:focus{
+   background-color:#b77a02;
    color: #fff;
  }
 
@@ -2078,7 +2081,7 @@ button.dim:active:before {
 }
 .form-control:focus,
 .single-line:focus {
-  border-color: #02408a !important;
+  border-color: #005f4a !important;
 }
 .has-success .form-control {
   border-color: #02408a;
