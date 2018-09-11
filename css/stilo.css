@@ -253,7 +253,7 @@ video {
 }
 
 .navbar-brand .nav-logo-diretrix{
-  width:35%;
+  width:45%;
   height: auto;
   float: left;
   padding: 10px 0 0px 10px;
@@ -355,7 +355,7 @@ font-size: 12px;
   }
 
   .navbar-brand .nav-logo-diretrix{
-    width:38%;
+    width:45%;
     padding: 5px 0 0px 10px;
   }
 
@@ -1001,6 +1001,15 @@ button.btn-formLogin:active{
    margin:5px 0;
  }
 
+  footer  p>a,
+  footer p>a:hover,
+  footer p>a:focus-within,
+  footer p>a:visited{
+   font-size: 12px;
+   margin:5px 0;
+   color: #fff;
+ }
+
  footer .social-icone{
    background-color: #1a4465;
    padding: 12px 12px 12px 12px;
@@ -1024,7 +1033,7 @@ button.btn-formLogin:active{
 
  .container-footer{
   width:  100%;
-  max-width: 330px;
+  max-width: 334px;
  }
 
  .container-brand{
