@@ -303,12 +303,13 @@ font-size: 12px;
     background-color: #0e593d;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a{
 	text-transform: uppercase;
   color: #fff;
   padding-right: 0;
 }
 
+.navbar-default .navbar-nav>li>a:focus-within,
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:active{
     color: #cb9200;
@@ -951,7 +952,10 @@ button.btn-formLogin:active{
 
  button.btn-formTalk:hover,
  button.btn-formTalk:active,
-  button.btn-formTalk:focus{
+ button.btn-formTalk:focus,
+ button.btn-formTalk:visited,
+ button.btn-formTalk:focus-within
+  {
    background-color:#b77a02;
    color: #fff;
  }

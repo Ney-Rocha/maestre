@@ -13,7 +13,7 @@
 </head>
 <body  class="white-bg no-margins">
 
-        <nav class="navbar-login">
+        <nav class="navbar-login" id="topo">
             <div class="navbar navbar-default ">
                 <div class="container margin-login-all">
                     <div class="navbar-brand">  
@@ -33,8 +33,8 @@
                     </div> <!-- navbar-header -->
                     <nav id="menu-login" class="collapse navbar-collapse no-padding no-borders ">                           
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="nav-item"><a href="#">Sobre o Maestre</a></li> <!--link cego-->
-                            <li class="nav-item"><a href="#">Fale conosco</a></li>     <!--link cego-->
+                            <li class="nav-item"><a href="#produtos">Sobre o Maestre</a></li> 
+                            <li class="nav-item"><a href="#faleconosco">Fale conosco</a></li>     
                             <li class="nav-item"><a href="#login">Acesso</a></li>
                         </ul>
                     </nav><!--  navbar-header -->
@@ -95,7 +95,7 @@
 
 
 
-        <section class="section-produtos">
+        <section class="section-produtos" id="produtos">
             <div class="margin-login-all">
 
                 <div class="container-fluid">
@@ -155,7 +155,7 @@
 
 
 
-        <section class="section-form">
+        <section class="section-form" id="faleconosco">
             <div class="margin-login-all">
                 <form action="">
                     <div class="row">
@@ -200,8 +200,8 @@
 
                     <div class="col-md-6 col-sm-12 m-r-none m-t-md">
                         <div class="container-brand"> 
-                            <div class="logo-footer">
-                               <a href="#"> <!-- link cego -->
+                            <div class="logo-footer" id="rodape">
+                               <a href="#topo"> <!-- link cego -->
                                    <img src="img/logoMaestre_footer.png" alt="Logomarca Diretrix">
                                </a> 
                             </div>
@@ -220,6 +220,8 @@
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/plugins/popper.js-1.14.4"></script>
+
+<script src="app.js"></script>
     
 </body>
 </html>
