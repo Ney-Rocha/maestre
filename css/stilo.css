@@ -63,18 +63,6 @@ h5 {
   margin: 0 20%;
  }
 
- /* @media (min-width: 1200px){
- .container {
-     width: 1019px;
- }
- @media (min-width: 992px){
- .container {
-     width: 970px;
- }
- @media (min-width: 768px){
- .container {
-     width: 750px;
- } */
 
 
  /*==========================================================================================
@@ -180,19 +168,19 @@ video {
   margin: 0 auto;
  }
 
- @media (max-width: 2560px) and (min-width: 1441px) {
+ @media (min-width: 1026px) {
    .margin-login-all{
-   max-width:  1170px;
+   max-width:  1168px;
    }
   }
 
-  @media (max-width: 1440px) and (min-width:  1025px) {
+  @media (min-width: 991px) and (max-width:  1025px) {
     .margin-login-all{
      width:  940px;
    }
    }
 
-   @media (max-width: 1024px) and (min-width:769px) {
+   @media (min-width:769px) and (max-width: 990px ) {
     .margin-login-all{
     max-width:  748px;
     }
@@ -233,7 +221,7 @@ video {
 }
 .navbar-right {
     float: right!important;
-    margin-right: -38px;
+    margin-right: -30px;
 }
 
 
@@ -306,7 +294,10 @@ font-size: 12px;
 .navbar-default .navbar-nav>li>a{
 	text-transform: uppercase;
   color: #fff;
+  margin-left: 40px;
   padding-right: 0;
+  font-size: 18px;
+  font-weight: 100;
 }
 
 .navbar-default .navbar-nav>li>a:focus-within,
@@ -336,22 +327,31 @@ font-size: 12px;
       float: left;
       height: 50px;
       padding: 6px 2px;
-      width: 230px;
+      width: 193px;
   }
 
   .navbar-right {
       float: right!important;
       margin-right: -8px;
-      width: 312px;
+      width: 390px;
   }
 
   
 
   .navbar-brand .nav-logo-recupera{
-    width: 54%;
+    width: 95%;
     padding-right: 10px;
-    border-right: solid 1px #868686;
+    border-right: none;
 
+  }
+
+  .navbar-default .navbar-nav>li>a {
+      text-transform: uppercase;
+      color: #fff;
+      margin-left: 10px;
+      padding-right: 0;
+      font-size: 16px;
+      font-weight: 100;
   }
 
   .navbar-brand .nav-logo-diretrix{
@@ -369,6 +369,10 @@ font-size: 12px;
   text-transform: uppercase;
   font-size: 10px;
 
+  }
+  
+  .navbar-brand .nav-logo-diretrix{
+    display: none;
   }
 
   
@@ -411,7 +415,7 @@ font-size: 12px;
 .safe-area{
 	width: 100%;
 	min-height: 420px;
-	background-color: #DAB100;
+	background: linear-gradient( to bottom , #ddb900, #dab100, #d9ae00, #d8ae00 );  
 	position: relative;
 	top: 72px;
 }
@@ -444,10 +448,12 @@ font-size: 12px;
   margin-top: 5px;
   font-weight: 200;
   color: #0e593d;
+  font-size: 25px;
 }
 .img-container{
   position: relative;
   bottom: 0;
+  padding-top: 13px
   
 }
 .container-login-img{
@@ -464,8 +470,8 @@ font-size: 12px;
 input.form-login{
     height: 50px;
     padding-bottom:  30px;
-    font-size:  14px;
-    padding:  10px;
+    font-size:  18px;
+    padding:  15px;
     text-transform: uppercase;
     margin-bottom:  20px;
 }
@@ -481,14 +487,14 @@ textarea.form-login{
 
 
 .container-item-login{
-  background-color: #cb9200;
+  background-color: #f6cd00;
   color: #000000;
   width: 100%;
   height: auto;
-  padding: 15px 15px !important;
-  margin-top: 50px !important;
+  padding: 18px !important;
+  margin-top: 95px !important;
   border-radius: 1%;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .container-item-login > p.title-item{
@@ -508,9 +514,15 @@ textarea.form-login{
   color: #000000;
 }
 
+.password-small{
+  font-size: 13px;
+}
+
 button.btn-formLogin{
   background-color: #0e593d;
   color: #fff;
+  font-size: 22px;
+  padding: 10px 30px;
 }
 
 button.btn-formLogin:hover,
@@ -535,21 +547,31 @@ button.btn-formLogin:active{
     margin: 0;
   }
 }
-@media(min-width:1441px){
+@media(min-width:1440px){
+
+  .safe-area{
+   padding-top: 40px;
+  }
+
   .safe-area h1{
-    margin: 0 50px 15px 0px;
-    font-size: 70px;
+    margin: 0px 35px 15px 0px;
+    font-size: 69px;
     text-align: right;
   }
 
   .safe-area h2 {
-    margin: 0 0 7px 50px;
-    font-size: 60px;
-    text-align: left;
+    margin: 0 0px 0 50px !important;
+    font-size: 51px!important;
+    text-align: left !important;
+    font-weight: 100;
   }
 }
 
-@media(min-width: 1025px) and (max-width: 1440px){
+@media(min-width: 1025px) and (max-width: 1439px){
+   .safe-area{
+      padding-top: 53px;
+    }
+
   
   .safe-area h1{
     margin: 0 50px 15px 0px;
@@ -568,6 +590,10 @@ button.btn-formLogin:active{
 
 @media (min-width: 769px) and (max-width: 1024px){
 
+  .safe-area{
+      padding-top: 43px!important;
+    }
+
   .safe-area h1{
     margin: 0 50px 15px 0px;
     font-size: 45px;
@@ -580,15 +606,16 @@ button.btn-formLogin:active{
     text-align: left !important
   }
    .img-container{
+    padding-top: 40px;
      position: relative;
-     bottom: -4px !important;
+     bottom: 0px !important;
      
    }
 
   
   .container-item-login {
     padding: 11px 21px!important;
-    margin-top: 39px !important;
+    margin-top: 60px !important;
     margin-bottom: 20px !important;
     border-radius: 1%;
     height: auto;
@@ -629,11 +656,15 @@ button.btn-formLogin:active{
 
   .container-item-login {
     padding: 17px 37px!important;
-    margin-top: 40px !important;
-    margin-bottom: 50px !important;
+    margin-top: 53px !important;
+    margin-bottom: 40px !important;
     border-radius: 1%;
     height: auto;
   }
+  .container-fluid .m-t-gg{
+    margin-top: 0;
+  }
+
 
 }
 
@@ -658,6 +689,13 @@ button.btn-formLogin:active{
   }
 
   .container-item-login {
+      padding: 18px !important;
+      margin-top: 60px !important;
+      border-radius: 1%;
+      margin-bottom: 30px;
+  }
+
+  .container-item-login {
     padding: 15px 18px !important;
   }
 
@@ -670,6 +708,10 @@ button.btn-formLogin:active{
   .container-item-login > p > a{
     font-size: 12px;    
   }
+  
+  .container-fluid .m-t-gg{
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 374px) {
@@ -681,15 +723,19 @@ button.btn-formLogin:active{
     margin-bottom: 2px;
   }
 
-    .safe-area h2 {
-      font-size: 17px;
-      text-align: center;
-      margin-left: 0;
-      margin-bottom: 2px;
-    }
+  .safe-area h2 {
+    font-size: 17px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 2px;
+  }
+
 
   .container-item-login {
-    padding: 18px 30px !important;
+      padding: 18px !important;
+      margin-top: 53px !important;
+      border-radius: 1%;
+      margin-bottom: 27px;
   }
 
   .container-item-login > p {
@@ -700,6 +746,14 @@ button.btn-formLogin:active{
   .container-item-login > p > a {
     font-size: 12px!important;
     text-align: center;
+  }
+
+  .password-small {
+      font-size: 10px;
+}
+
+  .container-fluid .m-t-gg{
+    margin-top: 0;
   }
 
   }
@@ -734,7 +788,7 @@ button.btn-formLogin:active{
  }
 
  .section-produtos h1{
-   font-size: 2.5em;
+   font-size: 44px;
    text-align: center;
    margin-bottom: 20px;
  }
@@ -744,20 +798,25 @@ button.btn-formLogin:active{
     margin-top: 5px;
     margin-bottom: 5px;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 34px;
  }
 
 .section-produtos h3 {
    margin-top: 5px;
    font-weight: 400;
    color: #000000;
+   font-size: 24px
 }
 
  .section-produtos p{
    color: #000000;
-   font-size: 1.1em;
+   font-size:18px;
    text-align: center;
  }
+
+ .panel-produtos {
+    margin-bottom: 40px;
+}
 
 
 
@@ -782,6 +841,7 @@ button.btn-formLogin:active{
 
     .section-produtos p{
       text-align: center;
+      font-size: 16px;
     }
 
  }
@@ -805,7 +865,7 @@ button.btn-formLogin:active{
  }
 
  .section-carousel article h3{
-    font-size: 15px;
+    font-size: 26px;
     font-weight: 400;
     margin-bottom: 4px;
     color: #000000;
@@ -852,7 +912,7 @@ button.btn-formLogin:active{
  .carousel-inner .content-carousel p{
    color: #000000;
    padding-top: 10px!important;
-   font-size: 13px;
+   font-size: 18px;
 
  }
 
@@ -930,7 +990,7 @@ button.btn-formLogin:active{
 
  .section-form{
    background-color: #ebebeb;
-   padding: 40px 0;
+   padding: 44px 0;
    width: 100%;
    min-height: 450px;
    overflow: hidden;
@@ -997,7 +1057,7 @@ button.btn-formLogin:active{
  }
 
  footer  p{
-   font-size: 14px;
+   font-size: 16px;
    margin:5px 0;
  }
 
@@ -1005,9 +1065,9 @@ button.btn-formLogin:active{
   footer p>a:hover,
   footer p>a:focus-within,
   footer p>a:visited{
-   font-size: 12px;
-   margin:5px 0;
-   color: #fff;
+    font-size: 16px;
+    margin: 5px 0;
+    color: #fff;
  }
 
  footer .social-icone{
@@ -1033,7 +1093,7 @@ button.btn-formLogin:active{
 
  .container-footer{
   width:  100%;
-  max-width: 334px;
+  max-width: 487px;
  }
 
  .container-brand{
@@ -1060,15 +1120,11 @@ button.btn-formLogin:active{
 
 @media(max-width: 1366px){
   footer h2 {
-    font-size: 20px;
+    font-size: 24px;
     padding-top: 0;
     margin-top: 0;
   }
 
-  footer p {
-      font-size: 11px;
-      margin: 5px 0;
-  }
   
 }
  
@@ -1410,6 +1466,11 @@ video {
 .m-t-lg {
   margin-top: 30px;
 }
+.m-t-gg{
+
+  margin-top: 35px;
+}
+
 .m-t-xl {
   margin-top: 40px;
 }
@@ -2083,7 +2144,7 @@ button.dim:active:before {
   background-color: #FFFFFF;
   background-image: none;
   border: 1px solid #e5e6e7;
-  border-radius: 1px;
+  border-radius: 4px;
   color: #555555;
   display: block;
   padding: 6px 12px;
