@@ -891,6 +891,13 @@ button.btn-formLogin:active{
    opacity: 7.1;
  }
 
+ .carousel-inner {
+     position: relative;
+     width: 100%;
+     overflow: hidden;
+     min-height: 165px;
+ }
+
  .img-carousel{
     max-width: 100%;
     width: 216px;
@@ -901,7 +908,8 @@ button.btn-formLogin:active{
 
 
  .carousel-inner .img-carousel img{
-   width:100%;
+    width:100%;
+    padding-top: 10px;
  }
 
  .carousel-inner .content-carousel{
@@ -959,6 +967,12 @@ button.btn-formLogin:active{
  }
 
 @media(min-width: 769px) and (max-width: 1024px){
+  
+  .carousel-inner {    
+    min-height: 190px;
+  }
+
+
   .img-carousel {        
     padding: 36px 0;
   }
@@ -971,6 +985,11 @@ button.btn-formLogin:active{
 }
 
 @media(min-width: 320px) and (max-width: 768px){
+  
+   .carousel-inner {    
+    min-height: 400px;
+  }
+
   .section-carousel article {
     text-align: center;
   }
@@ -978,7 +997,7 @@ button.btn-formLogin:active{
   .carousel-inner .content-carousel p {
       color: #000000;
       padding: 0!important;
-      font-size: 11px;
+      font-size: 16px;
       text-align: center;
   }
 }
@@ -1178,6 +1197,16 @@ button.btn-formLogin:active{
      float: right;
     }  
   }
+
+/*==========================================================================================
+------------------------------------------ modal --------------------------------------------
+============================================================================================= */
+
+.modal-header {
+    padding: 15px;
+    border-bottom: none;
+}
+
 
 
  /*==========================================================================================

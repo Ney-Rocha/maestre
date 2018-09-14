@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+     <link href="css/animate.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
     <link rel="stylesheet" href="css/stilo.css">
 </head>
@@ -75,8 +76,11 @@
                                     <div class="form-group text-gray">
                                     <input type="cliente" class="form-control form-login" placeholder="Cliente" required>
                                     </div>
-                                    <a href="#"><small class="text-white password-small">&raquo; Esqueci minha senha</small></a> <!--link cego-->
+                                    <a href="#" data-toggle="modal" data-target="#envvioSenha"><small class="text-white password-small">&raquo; Esqueci minha senha</small></a> 
+                                   
                                     <button type="submit" class="btn btn-login btn-formLogin pull-right">Entrar</button>
+
+                                    
                                 </form>
                                 <div class="container-item-login">
                                     <p class="title-item">Ainda não é cliente?</p>
@@ -233,10 +237,7 @@
                                 </a>
                             </div> <!-- ibox-content -->
                         </div><!-- col-md-9 -->
-
-
-                    </div>
-                    
+                    </div><!--Container fluid -->                   
                 </div> <!-- margin-login-all -->
             </div>   <!--  row -->
         </section> <!-- section-carousel -->
@@ -253,7 +254,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group m-b-sm"><input type="text" class="form-control form-login" placeholder="Nome"></div>
-                            <div class="form-group m-b-sm"><input type="mail" class="form-control form-login" placeholder="Email"></div>
+                            <div class="form-group m-b-sm"><input type="email" class="form-control form-login" placeholder="Email"></div>
                             <div class="form-group m-b-sm"><input type="text" class="form-control form-login" placeholder="Fone"></div>
                         </div> <!-- col-6 -->
 
@@ -305,7 +306,33 @@
             </div> <!-- margin-login-al -->
         </footer> <!--footer-->
     </main> <!--Principal-->
+
+
+    <div class="modal inmodal" id="envvioSenha" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xs">
+            <div class="modal-content animated bounceInDown">
+                <div class="modal-header  border-white">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="row">                            
+                            <div class="col-sm-12">                                
+                                <div class="form-group m-b-sm"><input type="email" class="form-control form-login" placeholder=" informe o Email cadastrado" required></div>
+                                <div class="text-right m-b-sm"> 
+                                    <button type="submit" class="btn btn-login btn-formTalk">Enviar</button>
+                                </div>
+                            </div> <!-- col-6 -->                           
+                        </div>  <!-- row -->                  
+                    </form> <!-- form --> 
+                </div> <!-- modal-body -->               
+            </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+    </div><!-- modal -->
 	
+
+
+
 <!-- Mainly scripts -->
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
