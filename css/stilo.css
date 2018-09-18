@@ -451,9 +451,11 @@ font-size: 12px;
   font-size: 25px;
 }
 .img-container{
-  position: relative;
+  position: absolute;
   bottom: 0;
-  padding-top: 13px
+  width: 100%;
+  height: auto;
+  overflow: hidden;
   
 }
 .container-login-img{
@@ -465,6 +467,9 @@ font-size: 12px;
 .container-login-img img{
   width: 100%;
   height: auto;
+}
+.content-text{
+  display: inline-block;
 }
 
 input.form-login{
@@ -492,7 +497,7 @@ textarea.form-login{
   width: 100%;
   height: auto;
   padding: 18px !important;
-  margin-top: 95px !important;
+  margin-top: 54px !important;
   border-radius: 1%;
   margin-bottom: 45px;
 }
@@ -606,12 +611,12 @@ button.btn-formLogin:active{
     text-align: left !important
   }
    .img-container{
-    padding-top: 40px;
-     position: relative;
-     bottom: 0px !important;
-     
+    position: absolute;
+    bottom: 0px !important;
+    width: 590px;
+    height: auto;
+    overflow: hidden;
    }
-
   
   .container-item-login {
     padding: 11px 21px!important;
@@ -2240,4 +2245,20 @@ button.dim:active:before {
 .slider_red .noUi-connect {
   background: none repeat scroll 0 0 #ed5565;
   box-shadow: none;
+}
+
+.TelaHome {  
+  min-height: 664px;
+}
+@media(min-width: 768px) and (max-width: 1024px){
+  .TelaHome {  
+  min-height: 641px;
+}
+}
+
+@media (max-width: 1000px){
+  .TelaHome {  
+  display: none;
+}
+
 }

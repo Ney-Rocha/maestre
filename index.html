@@ -11,6 +11,7 @@
      <link href="css/animate.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
     <link rel="stylesheet" href="css/stilo.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body  class="white-bg no-margins">
 
@@ -35,7 +36,7 @@
                     </div> <!-- navbar-header -->
                     <nav id="menu-login" class="collapse navbar-collapse no-padding no-borders ">                           
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="nav-item nav-"><a href="#produtos">Sobre o Maestre</a></li> 
+                            <li class="nav-item"><a href="#produtos">Sobre o Maestre</a></li> 
                             <li class="nav-item"><a href="#faleconosco">Fale conosco</a></li>     
                             <li class="nav-item"><a href="#login">Acesso</a></li>
                         </ul>
@@ -56,7 +57,7 @@
                         </div> <!-- col-12 -->
                     </div><!--  row -->
                     <div class="row">   
-                        <div class="col-md-8 col-sm-7">
+                        <div class="col-md-8 col-sm-7 TelaHome">
                             <div class="img-container">
                                 <div class="container-login-img"> 
                                     <img src="img/Tela_Maestro_corte.png" alt="">
@@ -76,24 +77,36 @@
                                     <div class="form-group text-gray">
                                     <input type="cliente" class="form-control form-login" placeholder="Cliente" required>
                                     </div>
-                                    <a href="#" data-toggle="modal" data-target="#envvioSenha"><small class="text-white password-small">&raquo; Esqueci minha senha</small></a> 
-                                   
-                                    <button type="submit" class="btn btn-login btn-formLogin pull-right">Entrar</button>
 
-                                    
+                                    <div class="col-xs-9 col-sm-6">  
+                                        <a href="#" data-toggle="modal" data-target="#envvioSenha"><small class="text-white password-small">&raquo; Esqueci minha senha</small></a> 
+                                    </div>                                  
+
+                                    <div class="form-group col-xs-3  col-sm-6">                                   
+                                        <button type="submit" class="btn btn-login btn-formLogin pull-right">Entrar</button>
+                                    </div> 
+
+                                   <!--  <p><span class="text-danger"><strong> Senha informada não confere!</strong></span></p>
+                                    <p><span class="text-success"><strong> Email enviado para o email informado </strong></span></p> -->
+
+                                    <div class="col-xs-12">
+                                        <div class="g-recaptcha" data-sitekey="6Lcjy3AUAAAAAAsdItEPvyqIhehn5PqFpIwppxau"></div>
+                                    </div>
                                 </form>
-                                <div class="container-item-login">
-                                    <p class="title-item">Ainda não é cliente?</p>
-                                    <p>Quer conhecer melhor o Maestre e tudo o que ele pode fazer por sua empresa?</p>
-                                    <p>Ligue agora mesmo <b> (65) 3027-5327</b> ou <a href="#"> fale conosco</a></p>
-                                    
-                                </div><!-- container-item-login -->
+                                <div class="content-text"> 
+                                    <div class="container-item-login">
+                                        <p class="title-item">Ainda não é cliente?</p>
+                                        <p>Quer conhecer melhor o Maestre e tudo o que ele pode fazer por sua empresa?</p>
+                                        <p>Ligue agora mesmo <b> (65) 3027-5327</b> ou <a href="#"> fale conosco</a></p>
+                                        
+                                    </div><!-- container-item-login -->
+                                </div>
+                                
                             </div> <!--  row  form-->  
                         </div> <!-- col-4/5 -->
                     </div>   <!--  row geral -->  
 
                 </div>
-                        
             </div> <!-- margin All -->                      
         </section> <!-- save-area -->
 
@@ -336,9 +349,9 @@
 <!-- Mainly scripts -->
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/plugins/popper.js-1.14.4"></script>
 
 <script src="app.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
     
 </body>
 </html>
